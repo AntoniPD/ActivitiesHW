@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.activitieshomework.SecondActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="години"
+        android:ems="10"
+        android:id="@+id/edt_age"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/edt_adress"
+        android:hint="адрес"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/edt_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edt_town"
+        android:hint="град"
+        android:layout_marginTop="32dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edt_adress"
+        android:layout_alignStart="@+id/edt_adress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="дата на раждане"
+        android:id="@+id/edt_birthday"
+        android:layout_below="@+id/edt_town"
+        android:layout_alignLeft="@+id/edt_town"
+        android:layout_alignStart="@+id/edt_town"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продължи"
+        android:id="@+id/btn_continiue"
+        android:layout_below="@+id/edt_birthday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+</RelativeLayout>
